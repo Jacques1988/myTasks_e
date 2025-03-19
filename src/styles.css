@@ -8,3 +8,43 @@ body{
 .bg-dark{
     background-color: #272727;
 }
+
+
+.container{
+    max-width:1400px;
+    margin: 0 auto;
+}
+
+.teaser{
+    font-size: 1.3rem;
+    font-family: 'Helvetica';
+}
+
+
+.custom-btn{
+    padding:1rem 2rem;
+    border:none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: box-shadow 0.225s ease-in-out;
+    background-color: #974fce;
+    color:#f1f1f1;
+    font-size:1rem;
+}
+
+.custom-btn:hover{
+    box-shadow: 0 5px 5px lightgrey;
+}
+
+@media (max-width:1400px){
+    .container{
+        padding:0 1rem;
+    }
+}
+
+@media (max-width:480px){
+    .custom-btn{
+        font-size:0.85rem;
+        padding:1rem;
+    }
+}
