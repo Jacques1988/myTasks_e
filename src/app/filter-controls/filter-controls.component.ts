@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TasksService } from '../services/tasks.service';
 
 @Component({
   selector: 'app-filter-controls',
