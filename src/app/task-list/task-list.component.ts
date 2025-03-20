@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject} from '@angular/core';
 import { TaskItemComponent } from "./task-item/task-item.component";
+import { TasksService } from '../services/tasks.service';
 
 @Component({
   selector: 'app-task-list',
@@ -7,6 +8,8 @@ import { TaskItemComponent } from "./task-item/task-item.component";
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css'
 })
-export class TaskListComponent {
+export class TaskListComponent{
+ tasks = inject(TasksService).getAllTasks()
+
 
 }

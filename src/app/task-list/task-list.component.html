@@ -4,7 +4,11 @@
     </div>
     <div class="list-container">
         <ul class="list-group">
-            <app-task-item></app-task-item>
+            @if(tasks){
+                @for(task of tasks; track task.id){
+                    <app-task-item [task]="task"></app-task-item>
+                }
+            }
         </ul>
     </div>
 </section>

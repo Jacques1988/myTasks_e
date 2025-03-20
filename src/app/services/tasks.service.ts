@@ -7,4 +7,10 @@ import { tasks } from '../mock-data';
 export class TasksService {
 tasks = tasks
   constructor() { }
+
+
+getAllTasks(){
+  return this.tasks
+}
+
 }

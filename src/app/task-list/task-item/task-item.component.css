@@ -9,6 +9,7 @@
     font-size:1.2rem;
     font-family: 'Helvetica';
     padding:1rem 2rem;
+    min-width:200px;
 }
 
 input[type="checkbox"]{
