@@ -9,3 +9,9 @@
     align-items: center;
     padding-top:1rem;
 }
+
+@media (max-width:480px){
+    .teaser{
+        display:none;
+    }
+}
