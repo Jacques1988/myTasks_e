@@ -1,0 +1,40 @@
+.list-group-element{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.task-text{
+    font-size:1.2rem;
+    font-family: 'Helvetica';
+    padding:1rem 2rem;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width:30px;
+    height:30px;
+    border: 1px solid lightgrey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position:relative;
+    transition: all 0.225s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(7, 163, 7);
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

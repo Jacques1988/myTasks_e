@@ -1,0 +1,21 @@
+.container{
+    margin-top:4rem;
+}
+
+.header-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#d3d3d3;
+    padding:0.5rem 0;
+}
+
+.list-container{
+    margin-top:2rem;
+}
+
+.list-group{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
