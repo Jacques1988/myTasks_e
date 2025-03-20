@@ -39,3 +39,7 @@ input[type="checkbox"]:checked::after {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+.text-stroked{
+    text-decoration: line-through;
+}
