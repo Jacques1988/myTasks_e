@@ -30,6 +30,7 @@ export class TasksService {
     let taskIndex = this.tasks.findIndex(
       (task: Task) => task.id === updatedTask.id
     );
+    console.log(updatedTask)
     this.tasks.splice(taskIndex, 1);
     this.tasks.splice(taskIndex, 0, updatedTask);
   }
@@ -40,10 +41,10 @@ export class TasksService {
   }
 
   getCompletedTasks(){
-    this.filteredTasks.update(old => old.filter((task: Task) => task.status === "complete"))
+    this.filteredTasks.set(this.tasks.filter((task: Task) => task.status === "completed"))
   }
 
   getIncompletedTasks(){
-    console.log("incompleted")
+    console.log('incompleted')
   }
 }

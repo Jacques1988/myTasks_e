@@ -8,7 +8,7 @@ export let tasks = [
     {
         id: 2,
         task: "Katze füttern",
-        status: "complete",
+        status: "completed",
         checked: true,
     },
     {

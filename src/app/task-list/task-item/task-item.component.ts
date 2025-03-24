@@ -16,7 +16,6 @@ export class TaskItemComponent {
  toggleStatus(){
   this.task().checked = !this.task().checked
   this.task().checked ? this.task().status = "completed" : this.task().status = "incomplete"
-
   this.updateStatus()
  }
 
