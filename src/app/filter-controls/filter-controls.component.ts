@@ -8,5 +8,18 @@ import { TasksService } from '../services/tasks.service';
   styleUrl: './filter-controls.component.css'
 })
 export class FilterControlsComponent {
+  taskService = inject(TasksService)
 
+
+  getAllTasks(){
+    this.taskService.getAllTasks()
+  }
+
+  getCompletedTasks(){
+    this.taskService.getCompletedTasks()
+  }
+
+  getIncompletedTasks(){
+    this.taskService.getIncompletedTasks()
+  }
 }
