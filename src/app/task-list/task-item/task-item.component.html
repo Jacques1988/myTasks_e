@@ -1,5 +1,5 @@
 <li class="list-group-element">
-    <input [checked]="task().checked" type="checkbox">
+    <input [checked]="task().checked" type="checkbox" (change)="toggleStatus()">
     <span [ngClass]="{'text-stroked': task().checked}" class="task-text">{{task().task}}</span>
     <span class="task-text">{{task().status}}</span>
 </li>

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Task } from '../../models/task';
 import { NgClass } from '@angular/common';
 
@@ -10,5 +10,16 @@ import { NgClass } from '@angular/common';
 })
 export class TaskItemComponent {
  task = input.required<Task>()
- 
+ updateTaskEvent = output()
+
+ toggleStatus(){
+  this.task().checked = !this.task().checked
+  this.task().checked ? this.task().status = "completed" : this.task().status = "incomplete"
+
+  this.updateStatus()
+ }
+
+ updateStatus(){
+  this.updateTaskEvent.emit()
+ }
 }

@@ -43,3 +43,14 @@ input[type="checkbox"]:checked::after {
 .text-stroked{
     text-decoration: line-through;
 }
+
+@media (max-width:600px){
+    .task-text{
+        min-width:100px;
+        padding:1rem 0;
+    }
+
+    .list-group-element{
+        justify-content: space-between;
+    }
+}
