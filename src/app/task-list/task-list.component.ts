@@ -16,4 +16,8 @@ export class TaskListComponent {
   updateTask(task: Task) {
     this.taskService.updateTask(task);
   }
+
+  deleteTask(task: Task){
+    this.taskService.deleteTask(task)
+  }
 }

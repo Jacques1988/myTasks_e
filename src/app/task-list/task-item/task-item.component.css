@@ -53,4 +53,15 @@ input[type="checkbox"]:checked::after {
     .list-group-element{
         justify-content: space-between;
     }
+
+    .delete-button{
+        min-width:unset;
+    }
+}
+
+@media (max-width:480px){
+    .status-text{
+        display:none;
+    }
+
 }

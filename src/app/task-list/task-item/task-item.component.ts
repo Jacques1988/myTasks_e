@@ -11,6 +11,7 @@ import { NgClass } from '@angular/common';
 export class TaskItemComponent {
  task = input.required<Task>()
  updateTaskEvent = output()
+ onDeleteTaskEvent = output()
 
  toggleStatus(){
   this.task().checked = !this.task().checked
@@ -21,5 +22,9 @@ export class TaskItemComponent {
 
  updateStatus(){
   this.updateTaskEvent.emit()
+ }
+
+ onDelete(){
+  this.onDeleteTaskEvent.emit()
  }
 }
