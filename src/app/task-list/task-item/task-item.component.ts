@@ -1,6 +1,7 @@
 import { Component, input, output } from '@angular/core';
 import { Task } from '../../models/task';
 import { NgClass } from '@angular/common';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-task-item',
@@ -19,6 +20,7 @@ export class TaskItemComponent {
   this.updateStatus()
  }
 
+
  updateStatus(){
   this.updateTaskEvent.emit()
  }
@@ -26,4 +28,5 @@ export class TaskItemComponent {
  onDelete(){
   this.onDeleteTaskEvent.emit()
  }
+
 }

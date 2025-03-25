@@ -13,7 +13,6 @@ export class TasksService {
   getAllTasks() {
     this.filteredTasks.set(this.tasks)
     return this.filteredTasks()
-    /* return this.tasks; */
   }
 
   createTask(task: string){
@@ -30,7 +29,6 @@ export class TasksService {
     let taskIndex = this.tasks.findIndex(
       (task: Task) => task.id === updatedTask.id
     );
-    console.log(updatedTask)
     this.tasks.splice(taskIndex, 1);
     this.tasks.splice(taskIndex, 0, updatedTask);
   }
@@ -45,6 +43,6 @@ export class TasksService {
   }
 
   getIncompletedTasks(){
-    console.log('incompleted')
+    this.filteredTasks.set(this.tasks.filter((task: Task) => task.status === "incomplete"))
   }
 }
